@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    Dalt (0.1.0)
+    dalt (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -26,8 +26,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  Dalt!
   bundler (~> 1.16)
+  dalt!
   rake (~> 10.0)
   rspec (~> 3.0)
 

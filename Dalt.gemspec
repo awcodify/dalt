@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'Dalt/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'Dalt'
+  spec.name          = 'dalt'
   spec.version       = Dalt::VERSION
   spec.authors       = ['whatdacode']
   spec.email         = ['awcodify@gmail.com']
