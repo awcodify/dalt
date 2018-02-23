@@ -1,6 +1,6 @@
 # Dalt
 
-```
+```ruby
 begin
    myDate = Date.parse("31-01-2016")
 rescue ArgumentError
@@ -8,7 +8,7 @@ rescue ArgumentError
 end
 ```
 or even something complex using regex to check valid date?
-```
+```ruby
 /(\d{1,2}[-\/]\d{1,2}[-\/]\d{4})|(\d{4}[-\/]\d{1,2}[-\/]\d{1,2})/.match("31-02-2010")
 ```
 or much another big effort ways to parsing date. Stop doing something big for something small and just doing small for something big :)
@@ -32,7 +32,7 @@ Or install it yourself as:
 ## Usage
 
 Simple. Very similiar with `Date.parse`. Just:
-```
+```ruby
 Dalt.parse('YOUR DATE').alt('YOUR ALTERNATIVE')
 ```
 
