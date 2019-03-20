@@ -5,7 +5,7 @@ RSpec.describe Dalt do
   end
 
   it 'return alternate if invalid' do
-    parse = described_class.parse('monday invalid', alt: 'Hello')
+    parse = described_class.parse('invalid', alt: 'Hello')
     expect(parse).to eq('Hello')
   end
 end
