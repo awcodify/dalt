@@ -33,7 +33,7 @@ Or install it yourself as:
 
 Simple. Very similiar with `Date.parse`. Just:
 ```ruby
-Dalt.parse('YOUR DATE').alt('YOUR ALTERNATIVE')
+Dalt.parse('YOUR DATE', alt: 'YOUR ALTERNATIVE')
 ```
 
 If your date is valid, then will return your valid date.
