@@ -1,5 +1,3 @@
-require 'Date'
-
 RSpec.describe Dalt do
   it 'has a version number' do
     expect(Dalt::VERSION).not_to be nil

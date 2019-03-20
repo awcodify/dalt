@@ -1,4 +1,5 @@
 require 'dalt/version'
+require 'date'
 
 module Dalt
   def self.parse(text)
@@ -11,6 +12,7 @@ module Dalt
 
   def self.alt(alt)
     return alt if @date.nil?
+
     @date
   end
 end
