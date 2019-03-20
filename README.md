@@ -1,17 +1,6 @@
 # Dalt
 
-```ruby
-begin
-   myDate = Date.parse("31-01-2016")
-rescue ArgumentError
-   # handle invalid date
-end
-```
-or even something complex using regex to check valid date?
-```ruby
-/(\d{1,2}[-\/]\d{1,2}[-\/]\d{4})|(\d{4}[-\/]\d{1,2}[-\/]\d{1,2})/.match("31-02-2010")
-```
-or much another big effort ways to parsing date. Stop doing something big for something small and just doing small for something big :)
+Parse you date dynamically without raising error when invalid, but returning alternative object as you want.
 
 ## Installation
 
@@ -33,7 +22,14 @@ Or install it yourself as:
 
 Simple. Very similiar with `Date.parse`. Just:
 ```ruby
-Dalt.parse('YOUR DATE', alt: 'YOUR ALTERNATIVE')
+['invalid', 'monday', '01-01-2019'].each do |date|
+   Dalt.parse(date, alt: 'Invalid date')
+end
+```
+will return
+
+```ruby
+["Invalid date", #<Date: 2019-03-18 ((2458561j,0s,0n),+0s,2299161j)>, #<Date: 2019-01-01 ((2458485j,0s,0n),+0s,2299161j)>]
 ```
 
 If your date is valid, then will return your valid date.
