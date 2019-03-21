@@ -20,6 +20,8 @@ Or install it yourself as:
 
 ## Usage
 
+### .parse
+
 Simple. Very similiar with `Date.parse`. Just:
 ```ruby
 ['invalid', 'monday', '01-01-2019'].each do |date|
@@ -35,6 +37,27 @@ will return
 If your date is valid, then will return your valid date.
 If your date is not valid, then will return your alternate.
 Simple, right?
+
+### .smart_change
+
+```ruby
+Dalt.smart_change('31-12-2019', month: 2)
+```
+
+```
+=> 29 February 2019
+```
+
+You can even use alternet in `.smart_change`
+
+```ruby
+Dalt.smart_change('31-12-2019', month: 2, alt: 'Alternate date')
+```
+
+```
+=> "Alternate date"
+```
+
 
 ## Contributing
 
